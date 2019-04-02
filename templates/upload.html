@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div >
+        <h1 class="cover-heading"> <img src='../static/img/logo3.PNG' width='300' height='300' ></h1>
+    </div> 
+
+    <div class="lead justify-content-center ">
+        <form  id="upload-form"  method="POST" enctype="multipart/form-data">
+
+            <div class="row">
+            <input class="col-sm-8" type="file" name="file"  >
+            <div class="col-sm-4 "> <input type=submit value=Submit  class="btn  btn-outline-warning " ></div>
+            </div>
+        </form>
+        
+    </div>
+
+
+
+{% endblock content %}

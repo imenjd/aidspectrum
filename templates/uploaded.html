@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <div class="lead justify-content-center ">
+        
+        <div class="cover-heading"><img src="../static/uploads/{{filename}}" alt="uploaded x-ray"   width='300' height='300' > </div>
+        <div>
+            <p class="lead">  </p>
+            <p class="lead">  <a href="{{url_for('generate')}}" class="btn  btn-outline-danger  ">Generate!</a> </p>
+        </div>
+        
+    </div>
+
+
+
+{% endblock content %}

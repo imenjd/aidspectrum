@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<div >
+        <h1 class="cover-heading"> <img src='../static/img/logo3.PNG' width='300' height='300' ></h1>
+</div> 
+
+<p class="lead">Upload an x-ray and our 'module' will generate a heat-map of your x-ray with accuracy percentages of the right disease your patient has!</p>
+<div>
+
+<p class="lead">
+  <a href="{{url_for('upload_xray')}}" class="btn  btn-outline-secondary  ">Upload</a>
+</p>
+
+</div>
+
+<!--
+    #browse for an x-ray
+    #import the x-ray
+    #store it in the uploads folder
+    #display the chosen image
+    #then, run the script that will generate the heat map
+-->
+{% endblock content %}
+   
